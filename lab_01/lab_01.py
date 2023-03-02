@@ -11,8 +11,8 @@ int_bit = [1, 3]
 float_ii = [3.2, 8.0]
 
 for x in int_bit:
-    # if x.bit_count() > 1: #Python 3.10+
-    if (n := bin(x).count("1")) > 1:  # Python 3.9-
+    if (n := x.bit_count()) > 1: #Python 3.10+
+    #if (n := bin(x).count("1")) > 1:  # Python 3.9-
         print("Variable with value \"" + str(x) + "\" has more than 1 bit. Variable has " + str(n) + " bits.")
 for x in float_ii:
     if x.is_integer():
