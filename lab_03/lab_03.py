@@ -18,22 +18,20 @@ print(list_2, list_3, sep="\n")
 print("=========================Zad 3=========================")
 import numpy as np
 
-text = input("Input here some text without special characters:\n").lower()
+text = input("Input here some text:\n").lower()
 letters = np.array([*text])
 letters = list(np.unique(letters)) 
 letters.sort()
 print(letters)
 
 # lub bez numpy
-
-text = input("Input here some text without special characters:\n").lower()
 letters = np.array([*text])
 unique = list()
 for x in letters:
     if x not in unique:
         unique.append(x)
 unique.sort()
-print(unique)
+#print(unique)
 
 #Zad 4
 print("=========================Zad 4=========================")
@@ -48,7 +46,7 @@ months = dict()
 polish = ["styczeń", "luty", "marzec", "kwiecień", "maj", "czerwiec", "lipiec", "sierpień", "wrzesień", "październik", "listopad", "grudzień"]
 for x in range(1,13):
     months[x]=polish[x-1]
-print(months)
+#print(months)
 
 #Zad 5
 print("=========================Zad 5=========================")
