@@ -129,3 +129,6 @@ dmypy.json
 .pyre/
 
 kolokwium_nr_1/*
+
+lab_10/data_for_lab_10/*
+lab_10/*.csv
