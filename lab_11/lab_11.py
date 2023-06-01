@@ -24,7 +24,7 @@ print(find_regex("strings.txt",word_w_fg))
 print(find_regex("strings.txt",lines_w_4d))
 print(find_regex("strings.txt",urls))
 
-Zad2
+# Zad2
 date = re.compile(r'[A-Z][a-z]{2}\s{1,2}\d{1,2}\s\d{2}:\d{2}:\d{2}')
 dates = find_regex("auth.log",date)
 dates= [datetime.strptime(x,'%b %d %H:%M:%S').replace(year=2023).strftime('%Y-%m-%d %H:%M:%S') for x in dates]                                                    #TODO
